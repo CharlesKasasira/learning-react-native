@@ -13,5 +13,6 @@ Others
 | ``` <TextInput> ``` | onChangeText <br /> onSubmitEditing |
 | ``` <ScrollView> ``` | horizontal <br /> pagingEnabled |
 | ``` <FlatList> ``` | data <br /> renderItem |
+| ``` <SectionList> ``` | sections <br> renderItem <br> renderSectionHeader <br> keyExtractor |
 
 
