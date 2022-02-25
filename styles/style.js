@@ -15,6 +15,9 @@ const GLOBAL_STYLES = StyleSheet.create({
     btnText: {
         'color': COLORS.WHITE,
         'textAlign': 'center'
+    },
+    geniusStaff: {
+        fontWeight: "bold"
     }
 })
 
