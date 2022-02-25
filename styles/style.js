@@ -5,7 +5,8 @@ const GLOBAL_STYLES = StyleSheet.create({
     container: {
         flex: 1,
         'alignItems': 'center',
-        'justifyContent': 'center'
+        'justifyContent': 'center',
+        // padding: 20
     },
     button: {
         'backgroundColor': 'red',
@@ -23,6 +24,18 @@ const GLOBAL_STYLES = StyleSheet.create({
         padding: 10,
         height: 40,
         fontSize: 18
+    },
+    card: {
+        margin: 10,
+        width: '100%',
+        height: 100,
+        backgroundColor: 'red',
+        borderWidth: 3,
+        borderRadius: 20
+    },
+    flat: {
+        width: '100%',
+        padding: 10
     }
 })
 

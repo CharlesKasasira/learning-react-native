@@ -1,11 +1,39 @@
-import { View, Text, TouchableOpacity, TextInput, Button } from 'react-native'
+import { View, Text, TouchableOpacity, TextInput, Button, FlatList } from 'react-native'
 import React, { useState } from 'react'
-import { GLOBAL_STYLES } from './styles/style'
+import { GLOBAL_STYLES } from '../styles/style'
 
 const DashboardScreen = (props) => {
   const [ text, setText ] = useState('Charles is a Genius')
   return (
     <View style={GLOBAL_STYLES.container}>
+      {/* <View style={GLOBAL_STYLES.card}>
+        <Text>Prayer Request</Text>
+      </View>
+      <View style={GLOBAL_STYLES.card}>
+        <Text>Prayer Request</Text>
+      </View>
+      <View style={GLOBAL_STYLES.card}>
+        <Text>Prayer Request</Text> 
+      </View>
+      <View style={GLOBAL_STYLES.card}>
+        <Text>Prayer Request</Text>
+      </View> */}
+
+      <FlatList 
+        style={GLOBAL_STYLES.flat}
+        data={[
+          {name: 'One'},
+          {name: 'Two'},
+          {name: 'There'},
+          {name: 'There'},
+          {name: 'There'},
+          {name: 'There'},
+          {name: 'There'}
+        ]}
+
+        renderItem={({item}) => <View style={GLOBAL_STYLES.card}><Text>{item.name}</Text></View>}
+      />
+
       <Text>Dashboard</Text>
 
       <TouchableOpacity
