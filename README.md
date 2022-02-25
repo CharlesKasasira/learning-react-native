@@ -7,8 +7,11 @@ Native Core Components
 
 Others
 
-| Component | Properties |
-| --- | --- |
+| Component | Properties | Brief |
+| --- | --- | --- |
 | ```<TouchableOpacity>``` | |
 | ``` <TextInput> ``` | onChangeText <br /> onSubmitEditing |
+| ``` <ScrollView> ``` | horizontal <br /> pagingEnabled |
+| ``` <FlatList> ``` | data <br /> renderItem |
+
 

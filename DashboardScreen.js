@@ -1,4 +1,4 @@
-import { View, Text, TouchableOpacity, TextInput } from 'react-native'
+import { View, Text, TouchableOpacity, TextInput, Button } from 'react-native'
 import React, { useState } from 'react'
 import { GLOBAL_STYLES } from './styles/style'
 
@@ -7,11 +7,13 @@ const DashboardScreen = (props) => {
   return (
     <View style={GLOBAL_STYLES.container}>
       <Text>Dashboard</Text>
+
       <TouchableOpacity
         onPress={() => props.navigation.navigate('Login')}>
             <Text>Logout</Text>
       </TouchableOpacity>
-
+      <Button title='Contact list'
+        onPress={() => props.navigation.navigate('Contact')} />
       <Text style={GLOBAL_STYLES.geniusStaff}>{text} is a genius</Text>
 
       <TextInput

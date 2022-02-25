@@ -18,6 +18,11 @@ const GLOBAL_STYLES = StyleSheet.create({
     },
     geniusStaff: {
         fontWeight: "bold"
+    },
+    contacts: {
+        padding: 10,
+        height: 40,
+        fontSize: 18
     }
 })
 
