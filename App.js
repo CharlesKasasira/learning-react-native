@@ -19,7 +19,7 @@ const App = () => {
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Login" >
         <Stack.Screen name='Login' component={LoginScreen} />
-        <Stack.Screen name='Dashboard' component={DashboardScreen} options={{title: 'hello world'}} />
+        <Stack.Screen name='Dashboard' component={DashboardScreen} options={{title: 'DASHBOARD'}} />
       </Stack.Navigator>
     </NavigationContainer>
   )
