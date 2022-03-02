@@ -1,12 +1,16 @@
 import { StyleSheet } from "react-native";
-import { COLORS } from "./helpers/constants";
+import { COLORS, FONTS } from "../helpers/constants";
 
 const GLOBAL_STYLES = StyleSheet.create({
     container: {
         flex: 1,
         'alignItems': 'center',
         'justifyContent': 'center',
-        // padding: 20
+        padding: 20
+    },
+    activityContainer: {
+        backgroundColor: 'purple',
+        opacity: 0.8
     },
     dashboard:{
         'flex':1,
@@ -20,8 +24,7 @@ const GLOBAL_STYLES = StyleSheet.create({
         'marginBottom':10,
     },
     dashboardItemText:{
-        'fontSize':20,
-        'fontWeight':'bold'
+        'fontSize':20
     },
     dashboardItemPurple:{
         backgroundColor:COLORS.PURPLE
@@ -66,7 +69,18 @@ const GLOBAL_STYLES = StyleSheet.create({
     flat: {
         width: '100%',
         padding: 10
+    },
+    dashboardFont: {
+        fontFamily: FONTS.HEADING
+    },
+    inputField: {
+        borderBottomColor: 'purple',
+        borderBottomWidth: 2,
+    },
+    feedback: {
+        color: 'purple'
     }
+
 })
 
 

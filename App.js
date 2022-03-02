@@ -26,7 +26,7 @@ const App = () => {
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Login" >
         <Stack.Screen name='Login' component={LoginScreen} />
-        <Stack.Screen name='Dashboard' component={DashboardScreen} options={{title: 'DASHBOARD'}} />
+        <Stack.Screen name='Dashboard' component={DashboardScreen} options={{headerShown: false}} />
         <Stack.Screen name='Prayer' component={PrayerRequestScreen} />
         <Stack.Screen name='Service' component={ServiceScreen} />
         <Stack.Screen name='Testimonies' component={Testimonies} />

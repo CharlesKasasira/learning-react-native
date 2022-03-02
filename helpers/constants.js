@@ -9,7 +9,12 @@ const COLORS = {
     PINK: 'pink'
 }
 
+const FONTS = {
+    PRIMARY: 'AdventPro-Bold',
+    HEADING: 'FredokaOne-Regular'
+}
 
 
 
-export { COLORS }
+
+export { COLORS, FONTS }
