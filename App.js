@@ -24,7 +24,8 @@ const App = () => {
   const Stack = createNativeStackNavigator()
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Login" >
+      <Stack.Navigator /* initialRouteName="Login" */ >
+        <Stack.Screen name='Bible Study' component={BibleScreen} />
         <Stack.Screen name='Login' component={LoginScreen} />
         <Stack.Screen name='Dashboard' component={DashboardScreen} options={{headerShown: false}} />
         <Stack.Screen name='Prayer' component={PrayerRequestScreen} />
@@ -33,7 +34,6 @@ const App = () => {
         <Stack.Screen name='Donate' component={DonateScreen} />
         <Stack.Screen name='Online Cell' component={CellScreen} />
         <Stack.Screen name='Tithe' component={TitheScreen} />
-        <Stack.Screen name='Bible Study' component={BibleScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   )

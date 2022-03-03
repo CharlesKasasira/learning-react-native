@@ -79,6 +79,52 @@ const GLOBAL_STYLES = StyleSheet.create({
     },
     feedback: {
         color: 'purple'
+    },
+    flatListItem: {
+        flex: 1,
+        flexDirection: 'row',
+        padding: 10
+    },
+    flatListItemText: {
+        paddingHorizontal: 10,
+        flex: 2
+    },
+    flatListItemTitle: {
+        fontWeight: 'bold',
+        fontSize: 18
+    },
+    flatListItemIcons: {
+        flex: 1,
+        flexDirection: 'row',
+        flexDirection: 'row',
+        justifyContent: 'flex-end'
+    },
+    field: {
+        color: 'purple',
+        paddingBottom: 2
+    },
+    flatlistPhoto: {
+        height: 55,
+        width: 55,
+        borderRadius: 10
+    },
+    flatListNormalText: {
+        fontSize: 14
+    },
+    flatListItemSeparator: {
+        borderTopWidth: 1,
+        marginLeft: 20,
+        borderTopColor: 'purple'
+    },
+    flatListFooter: {
+        justifyContent: 'space-between',
+        flexDirection: 'row',
+        flex: 1,
+        padding: 10,
+        backgroundColor: COLORS.PURPLE
+    },
+    flatListContainer: {
+        flex: 17
     }
 
 })
