@@ -24,7 +24,7 @@ const App = () => {
   const Stack = createNativeStackNavigator()
   return (
     <NavigationContainer>
-      <Stack.Navigator /* initialRouteName="Login" */ >
+      <Stack.Navigator initialRouteName="Dashboard" >
         <Stack.Screen name='Bible Study' component={BibleScreen} />
         <Stack.Screen name='Login' component={LoginScreen} />
         <Stack.Screen name='Dashboard' component={DashboardScreen} options={{headerShown: false}} />

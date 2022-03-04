@@ -6,6 +6,7 @@ import { GLOBAL_STYLES } from '../styles/style'
 import DATA from '../helpers/DATA'
 import { COLORS } from '../helpers/constants'
 
+
 const Item = ({ item, playing, setPlaying }) => {
   const { title, date, time, preacher, photo } = item
   return (
@@ -82,17 +83,16 @@ const Footer = () => {
 const BibleScreen = ({ navigation }) => {
   const [ heading, setHeading ] = React.useState(true)
 
-
-  navigation.setOptions( {
-    headerTitle: () => <Header />, 
-    headerLeft: () => <Icon  name='home' size={25} color='black'm/>,
-    headerRight: () => (<TouchableOpacity onPress={() => setHeading(false)}>
-                          <FAIcon name='search' size={20} color='red' />
-                        </TouchableOpacity>),
-    headerShown: heading
-  })
-
-  
+  React.useEffect(() => {
+    navigation.setOptions( {
+      headerTitle: () => <Header />, 
+      headerLeft: () => <Icon  name='arrow-left' stroke={5} size={25} color='black'm/>,
+      headerRight: () => (<TouchableOpacity onPress={() => setHeading(false)}>
+                            <FAIcon name='search' size={20} color='red' />
+                          </TouchableOpacity>),
+      headerShown: heading
+    })
+  }, [heading])
 
   const [ playing, setPlaying ] = React.useState(true)
 
