@@ -142,12 +142,16 @@ const OVERLAY_STYLES = StyleSheet.create({
     },
     contentWrapper: {
         backgroundColor: '#fff',
-        padding: 20,
         borderRadius: 10,
         elevation: 3
     },
     overlayHeader: {
-        flexDirection: 'row'
+        flexDirection: 'row',
+        borderBottomWidth: 1,
+        padding: 10
+    },
+    body: {
+        padding: 10
     }
 })
 

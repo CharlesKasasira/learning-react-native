@@ -1,4 +1,4 @@
-import { View, Text, Button, TextInput } from 'react-native'
+import { View, Text, Button, TextInput, Slider } from 'react-native'
 import React from 'react'
 import Overlay from '../components/shared/Overlay'
 
@@ -31,6 +31,7 @@ const TitheScreen = ({navigation}) => {
       />}
 
       <Text>hey</Text>
+      <Slider />
     </View>
   )
 }

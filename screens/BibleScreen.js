@@ -55,16 +55,34 @@ const Header = () => {
 }
 
 const SearchHeader = ({switchHeader}) => {
+  const [ searchText, setSearchText ] = React.useState('')
+
+  console.log(searchText)
   return (
     <View style={{flexDirection: 'row', alignItems: 'center', backgroundColor: '#fff', borderBottomColor: 'grey'}}>
       <TouchableOpacity onPress={() => switchHeader(true)}>
         <Icon name='arrow-left' size={25} color='black' />
       </TouchableOpacity>
-      <TextInput 
-        style={{backgroundColor: '#c9c9c9', width: '90%', margin: 3, borderRadius: 15}}
-        placeholder='Search'
-      />
-      
+      <View
+        style={{
+          backgroundColor: '#c9c9c9',
+          width: '90%',
+          borderRadius: 15,
+          flexDirection: 'row',
+          justifyContent: 'center',
+          alignItems: 'center'
+        }}
+      >
+        <TextInput 
+          style={{width: '90%', margin: 3, borderRadius: 15}}
+          placeholder='Search'
+          onChangeText={(text) => setSearchText(text)}
+          value={searchText}
+        />
+        <TouchableOpacity onPress={() => setSearchText('')}>
+          <Icon name='x' size={20} color='black' />
+        </TouchableOpacity>
+      </View>
     </View>
   )
 }

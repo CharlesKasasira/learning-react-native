@@ -8,12 +8,12 @@ const Overlay = ({title, close, body}) => {
     <View style={OVERLAY_STYLES.container}>
         <View style={OVERLAY_STYLES.contentWrapper}>
             <View style={OVERLAY_STYLES.overlayHeader}>
-                <TouchableOpacity onPress={() => close()}>
+                <TouchableOpacity onPress={() => close()} style={{marginRight: 20}}>
                     <Icon name='x' size={25} color='#000' />
                 </TouchableOpacity>
                 <Text>{title}</Text>
             </View>
-            {body}
+            <View style={OVERLAY_STYLES.body}>{body}</View>
         </View>
     </View>
   )
