@@ -13,8 +13,8 @@ const GLOBAL_STYLES = StyleSheet.create({
         opacity: 0.8
     },
     dashboard:{
-        'flex':1,
-        'justifyContent':'space-between',
+        'flex':0.6,
+        // 'justifyContent':'space-between',
         // 'alignItems':'space-between',
     },
     dashboardItem:{
@@ -130,4 +130,26 @@ const GLOBAL_STYLES = StyleSheet.create({
 })
 
 
-export { GLOBAL_STYLES }
+const OVERLAY_STYLES = StyleSheet.create({
+    container: {
+        flex: 1,
+        backgroundColor: 'rgba(0, 0, 0, 0.3)',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: '100%',
+        width: '100%',
+        position: "absolute"
+    },
+    contentWrapper: {
+        backgroundColor: '#fff',
+        padding: 20,
+        borderRadius: 10,
+        elevation: 3
+    },
+    overlayHeader: {
+        flexDirection: 'row'
+    }
+})
+
+
+export { GLOBAL_STYLES, OVERLAY_STYLES }
