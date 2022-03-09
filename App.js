@@ -18,6 +18,7 @@ import DonateScreen from './screens/DonateScreen'
 import CellScreen from './screens/CellScreen'
 import TitheScreen from './screens/TitheScreen'
 import BibleScreen from './screens/BibleScreen'
+import MoneyScreen from './screens/MoneyScreen'
 
 const App = () => {
 
@@ -34,6 +35,7 @@ const App = () => {
         <Stack.Screen name='Donate' component={DonateScreen} />
         <Stack.Screen name='Online Cell' component={CellScreen} />
         <Stack.Screen name='Tithe' component={TitheScreen} />
+        <Stack.Screen name='Money' component={MoneyScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   )

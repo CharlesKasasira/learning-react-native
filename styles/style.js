@@ -134,16 +134,17 @@ const OVERLAY_STYLES = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: 'rgba(0, 0, 0, 0.3)',
-        justifyContent: 'center',
-        alignItems: 'center',
+        justifyContent: 'flex-end',
         height: '100%',
         width: '100%',
         position: "absolute"
     },
     contentWrapper: {
         backgroundColor: '#fff',
-        borderRadius: 10,
-        elevation: 3
+        // borderRadius: 10,
+        borderTopLeftRadius: 20,
+        borderTopRightRadius: 20,
+        // elevation: 3,
     },
     overlayHeader: {
         flexDirection: 'row',

@@ -72,16 +72,30 @@ const DashboardScreen = ({navigation}) => {
       <View
         style={{
           flex: 0.3,
+          flexDirection: 'row'
         }}
       >
+        <View style={{flex: 0.5, borderWidth: 1}}>
           <TouchableOpacity
-            style={[GLOBAL_STYLES.dashboardItem]}
-            onPress={() => navigation.navigate('Bible Study')}>
-          <Text style={[
-              GLOBAL_STYLES.dashboardItemText,
-              GLOBAL_STYLES.dashboardFont
-            ]}>Bible Study</Text>
-          </TouchableOpacity>
+              style={[GLOBAL_STYLES.dashboardItem]}
+              onPress={() => navigation.navigate('Bible Study')}>
+              <Text style={[
+                  GLOBAL_STYLES.dashboardItemText,
+                  GLOBAL_STYLES.dashboardFont
+                ]}>Bible Study</Text>
+            </TouchableOpacity>
+        </View>
+        <View style={{flex: 0.5, borderWidth: 1}}>
+          <TouchableOpacity
+              style={[GLOBAL_STYLES.dashboardItem]}
+              onPress={() => navigation.navigate('Money')}>
+              <Text style={[
+                  GLOBAL_STYLES.dashboardItemText,
+                  GLOBAL_STYLES.dashboardFont
+                ]}>Money</Text>
+            </TouchableOpacity>
+        </View>
+          
       </View>
 
       {/* third column */}
